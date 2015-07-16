@@ -32,9 +32,12 @@ Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'joonty/vdebug.git'
+
+"common
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
+Plugin 'jiangmiao/auto-pairs'
 
 
 "snippet 
