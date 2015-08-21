@@ -39,6 +39,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'jiangmiao/auto-pairs'
 
+"coffeescript
+Plugin 'kchmck/vim-coffee-script'
+
 
 "snippet 
 " Track the engine.
@@ -46,6 +49,9 @@ Plugin 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
+
+"taglist
+Plugin 'kaich/taglist'
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -71,6 +77,18 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 map <C-n> :NERDTreeToggle<CR>
+
+"taglist
+let Tlist_Ctags_Cmd='ctags'
+let Tlist_Show_One_File=1           	"不同时显示多个文件的tag，只显示当前文件的
+let Tlist_WinWidt =28					"设置taglist的宽度
+let Tlist_Exit_OnlyWindow=1         	"如果taglist窗口是最后一个窗口，则退出vim
+"let Tlist_Use_Right_Window=1			"在右侧窗口中显示taglist窗口
+let Tlist_Use_Left_Windo =1        		"在左侧窗口中显示taglist窗口
+
+
+"coffeescript 
+au BufNewFile,BufRead *.coffee set filetype=coffee
 
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
