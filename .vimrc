@@ -53,6 +53,9 @@ Plugin 'honza/vim-snippets'
 "taglist
 Plugin 'kaich/taglist'
 
+"ack全局搜索
+Plugin 'mileszs/ack.vim'
+
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
